@@ -1,0 +1,41 @@
+alias emacs='emacs -nw'
+alias fr='find . | rg'
+alias lf='ls | fzf'
+alias gl='git l'
+alias gc='git checkout'
+alias gs='git status'
+alias gp='git pull'
+alias gf='git fetch'
+alias gb='git branch'
+alias gd='git diff'
+alias grod='git rebase origin/develop'
+alias cdp='cd ~/projects'
+
+alias test61x_ci='python -u -m pytest --ip 192.168.1.235 --tcp 192.168.218.128 --box 192.168.1.56 -k'
+alias test62x_ci='python -u -m pytest --ip 192.168.1.224 --tcp 192.168.218.128 --box 192.168.1.57 -k'
+alias test63x_ci='python -u -m pytest --ip 192.168.1.32 --tcp 192.168.218.128 --box 192.168.1.58 -k'
+alias test65x_ci='python -u -m pytest --ip 192.168.1.128 --tcp 192.168.218.128 --box 192.168.1.59 -k'
+
+alias test61x='python -u -m pytest --ip 192.168.1.245 --tcp 192.168.218.128 --box 192.168.1.61 -k'
+#alias test62x='python -u -m pytest --ip 192.168.1.224 --tcp 192.168.218.128 --box 192.168.1.57 -k'
+alias test63x='python -u -m pytest --ip 192.168.1.135 --tcp 192.168.218.128 --box 192.168.1.65 -k'
+#alias test65x='python -u -m pytest --ip 192.168.1.127 --tcp 192.168.218.128 --box 192.168.1.x -k'
+
+alias test61x_nb='python -u -m pytest --ip 192.168.1.245 --tcp 192.168.218.128 -k'
+#alias test62x_nb='python -u -m pytest --ip 192.168.1.224 --tcp 192.168.218.128 -k'
+alias test63x_nb='python -u -m pytest --ip 192.168.1.135 --tcp 192.168.218.128 -k'
+alias test65x_nb='python -u -m pytest --ip 192.168.1.127 --tcp 192.168.218.128 -k'
+
+
+alias rmtm='rg -iv "test" | rg -iv "mock"'
+
+alias build_vihalp='conan install .. --build missing --profile=/euler_profiles/profiles/profile_linux_arm64-ca53_release -o create_and_run_unit_tests=True -e CMAKE_EXPORT_COMPILE_COMMANDS=ON && conan build ..'
+alias build_vihalp_update='conan install .. --build missing --profile=/euler_profiles/profiles/profile_linux_arm64-ca53_release -o create_and_run_unit_tests=True -e CMAKE_EXPORT_COMPILE_COMMANDS=ON --update && conan build ..'
+alias build_vihalp_debug='conan install .. --build missing --profile=/euler_profiles/profiles/profile_linux_arm64-ca53_debug -o create_and_run_unit_tests=True -e CMAKE_EXPORT_COMPILE_COMMANDS=ON && conan build ..'
+
+alias build_visp='conan install .. --build missing --profile=/euler_profiles/profiles/profile_linux_arm64-ca53_release -e CMAKE_EXPORT_COMPILE_COMMANDS=ON && conan build ..'
+alias build_visp_update='conan install .. --build missing --profile=/euler_profiles/profiles/profile_linux_arm64-ca53_release -e CMAKE_EXPORT_COMPILE_COMMANDS=ON --update && conan build ..'
+alias build_visp_debug='conan install .. --build missing --profile=/euler_profiles/profiles/profile_linux_arm64-ca53_debug -e CMAKE_EXPORT_COMPILE_COMMANDS=ON && conan build ..'
+
+alias build_insp6='conan install .. --build missing --profile=../config/profile_linux_arm-ca7_release -e CMAKE_EXPORT_COMPILE_COMMANDS=ON && conan build ..'
+alias build_insp6_update='conan install .. --build missing --profile=../config/profile_linux_arm-ca7_release -e CMAKE_EXPORT_COMPILE_COMMANDS=ON --update && conan build ..'

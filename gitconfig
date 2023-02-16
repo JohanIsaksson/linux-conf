@@ -1,0 +1,19 @@
+[core]
+	editor = vim
+	autocrlf = false
+
+[user]
+	name = Johan Isaksson
+	email = johan.isaksson@sick.se
+
+[color]
+	ui = true
+
+[alias]
+	l = !git --no-pager log --format=tformat:'%C(bold blue)%h%C(reset) %C(bold magenta)%<(23)%an%C(reset) %C(white)%s%C(reset) %C(bold green)%d%C(reset)' ${default_arg:- -10}
+	conf = config --global -e
+	hal = !/home/isaksjo/workspace/git_workflow_tools/hal_tool.sh
+[diff]
+	algorithm = minimal
+[credential]
+	helper = store
