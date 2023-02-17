@@ -24,6 +24,9 @@ if [ -d ~/.zshrc.d ]; then for zsh in ~/.zshrc.d/*.zsh ; do source "$zsh"; done;
 
 POWERLEVEL9K_DISABLE_GITSTATUS=true
 
+. ~/antigen.zsh
+antigen bundle zsh-users/zsh-autosuggestions
+antigen apply
 
 plugins=(git colored-man-pages)
 
@@ -32,10 +35,18 @@ alias xpwd="pwd | xsel -b"
 
 setxkbmap se
 . ~/.p10k.zsh
-cd ~/projects
+
+export PROMPT_COMMAND="pwd > /tmp/whereami"
+if [ -f /tmp/whereami ] && [ -s /tmp/whereami ]; then
+  cd $(cat /tmp/whereami)
+else
+  cd ~/projects
+fi
+
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-. ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+#. ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Mount shared folder
 if [ -z "$(mount | grep 'vmhgfs-fuse' | grep '/D')" ]; then
