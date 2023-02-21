@@ -22,4 +22,5 @@
     #~/.exports: exports
     ~/.p10k.zsh: p10k.zsh
     ~/.config/i3/config: config/i3/config
+    ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
 

@@ -32,9 +32,7 @@ plugins=(git colored-man-pages)
 
 alias xpwd="pwd | xsel -b"
 
-
 setxkbmap se
-. ~/.p10k.zsh
 
 export PROMPT_COMMAND="pwd > /tmp/whereami"
 if [ -f /tmp/whereami ] && [ -s /tmp/whereami ]; then
