@@ -241,3 +241,4 @@ set ttimeout
 set ttimeoutlen=1
 set ttyfast
 
+set runtimepath^=~/.vim/bundle/ctrlp.vim

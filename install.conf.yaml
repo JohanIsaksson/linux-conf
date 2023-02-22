@@ -11,6 +11,7 @@
 - link:
     ~/.vim: vim
     ~/.vimrc: vimrc
+    ~/.vim/bundle/ctrlp.vim: ctrlp.vim
     #~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
     ~/.gitconfig: gitconfig
