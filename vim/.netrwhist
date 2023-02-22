@@ -1,11 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/isaksjo/projects/vihalp_lib/develop/src/vihalp/lib'
-let g:netrw_dirhist_2='/home/isaksjo/.vim'
-let g:netrw_dirhist_3='/home/isaksjo/projects/vihalp_lib/topic/SWPLHAL-3217-gpio-start-source/axivion'
-let g:netrw_dirhist_4='/home/isaksjo/projects/vihalp_lib/topic/SWPLHAL-3217-gpio-start-source/src/vihalp/lib/fpga/devices/v2d85x'
-let g:netrw_dirhist_5='/home/isaksjo/projects/vihalp_lib/topic/SWPLHAL-3195-num-free-images-in-pool/axivion'
-let g:netrw_dirhist_6='/home/isaksjo/projects/visp-engine/topic/IN8-40-lut/axivion'
-let g:netrw_dirhist_7='/home/isaksjo/projects/visp-engine/topic/IN8-64-start-stop-source/axivion'
-let g:netrw_dirhist_8='/home/isaksjo/projects/vihalp_lib/topic/SWPLHAL-3217-gpio-start-source/axivion'
-let g:netrw_dirhist_9='/home/isaksjo/projects/vihalp_lib/topic/SWPLHAL-3217-gpio-start-source/src/vihalp/lib/digital_io/drivers/max22513'
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/isaksjo/projects/cam_platform_8xx'
